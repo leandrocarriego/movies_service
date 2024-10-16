@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.v1.routes import movies_router
 from app.core.config import settings
-from app.core.database import get_db
+from app.core.database import get_db, init_db
 
 app = FastAPI(title="Movies Service")
 
