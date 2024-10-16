@@ -11,7 +11,7 @@ app = FastAPI(title="Movies Service")
 
 app.dependencies=[Depends(get_db)]
 
-app.include_router(movies_router, prefix="/api/v1")
+app.include_router(movies_router, prefix="/api/v1" )
 
 app.add_middleware(
     CORSMiddleware,
